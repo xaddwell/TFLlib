@@ -10,5 +10,4 @@ scripts/
 log_file
 __pycache__
 *.log
-!doc/
-.gitignore
+!docs/*
