@@ -1,8 +1,10 @@
 # <img src="docs/images/logo1.png" alt="icon" height="50" width="100" style="vertical-align:sub;"/> TFLlib: Trustworthy Federated Learning Library and Benchmark
-
+![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 ---
 
-TFLlib is a comprehensive library for trustworthy federated learning research based on [PFLlib](https://github.com/TsingZ0/PFLlib.git). It provides a unified framework to evaluate federated learning algorithms under various trustworthiness threats including backdoor attacks, Byzantine attacks, and privacy leakage.
+🎯**If you find our repository useful, please cite the corresponding paper (Coming Soon) and Repository:**
+
+TFLlib is a comprehensive library for trustworthy federated learning research based on [PFLlib](https://github.com/TsingZ0/PFLlib.git). It provides a unified framework to evaluate federated learning algorithms under various trustworthiness threats including Backdoor attacks, Byzantine attacks, Membership Inference Attacks (MIA), Label Inference Attacks (LIA) and Gradient Inversion Attacks (GIA).
 
 ![Framework](./docs/images/framework.png)
 
