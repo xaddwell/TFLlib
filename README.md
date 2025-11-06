@@ -126,7 +126,7 @@ python run_exp_inversion.py
 python run_exp_lia.py
 ```
 
-### Key Parameters
+### Key Parameters for FL Training
 
 | Parameter | Description | Default |
 |----------|-------------|---------|
@@ -141,6 +141,15 @@ python run_exp_lia.py
 | `--dev_hetero` | Device heterogeneity level (0-1) | 0.5 |
 | `--comm_hetero` | Communication heterogeneity level (0-1) | 0.5 |
 
+
+### Key Parameters for Client Attack [TODO]
+Coming soon...
+
+
+### Key Parameters for Server Attack [TODO]
+Coming soon...
+
+
 ## Real-world Environment Simulation
 
 TFLlib provides realistic simulation capabilities:
@@ -152,12 +161,11 @@ TFLlib provides realistic simulation capabilities:
 These features enable researchers to evaluate FL algorithms under practical deployment conditions.
 
 ## Multi-GPU Training
+Coming soon...
 
-TFLlib supports multi-GPU training for accelerated experimentation:
+## Extending TFLlib with you own Attack & Defense Mechanisms [TODO]
+Coming soon...
 
-```bash
-python main.py --gpu 4  # Use 4 GPUs for training
-```
 
 ## Citation
 
