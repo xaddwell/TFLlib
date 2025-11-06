@@ -77,7 +77,7 @@ TFLlib/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/TFLlib.git
+git clone https://github.com/xaddwell/TFLlib.git
 cd TFLlib
 
 # Install dependencies
