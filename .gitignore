@@ -11,3 +11,4 @@ log_file
 __pycache__
 *.log
 !docs/
+.gitignore
