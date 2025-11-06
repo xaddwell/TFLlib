@@ -168,3 +168,5 @@ This project is licensed under the Apache License - see the [LICENSE](./LICENSE)
 ## Acknowledgments
 
 This work is supported by [PFLlib](https://github.com/TsingZ0/PFLlib.git)
+
+We thank all the researchers who contribute to the development of TFLlib. Especially, we thank the benchmark [PFLlib](https://github.com/TsingZ0/PFLlib.git), provided by [Jianqing Zhang](https://github.com/TsingZ0).

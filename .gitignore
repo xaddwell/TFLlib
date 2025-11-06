@@ -9,3 +9,4 @@ scripts/
 log_file
 __pycache__
 *.log
+push2github.sh
