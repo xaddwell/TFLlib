@@ -3,11 +3,9 @@
 *.gz
 *.npz
 *.jpg
-*.png
 models/
 save/
 scripts/
 log_file
 __pycache__
 *.log
-!docs/*
