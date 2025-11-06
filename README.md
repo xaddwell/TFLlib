@@ -150,7 +150,7 @@ python main.py --gpu 4  # Use 4 GPUs for training
 
 ## Citation
 
-If you use TFLlib in your research, please cite our paper:
+If you use TFLlib in your research, please cite our repo:
 
 ```bibtex
 @misc{chen2025tfllib,
