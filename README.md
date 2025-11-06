@@ -163,4 +163,8 @@ If you use TFLlib in your research, please cite our repo:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License - see the [LICENSE](./LICENSE) file for details.
+
+## Acknowledgments
+
+This work is supported by [PFLlib](https://github.com/TsingZ0/PFLlib.git)
