@@ -82,7 +82,7 @@ TFLlib/
 - ⭕️ Provide datasets and pretrained models download scripts
 - ⭕️ Add more defense mechanisms
 
-## Getting Started
+## Getting Started [TODO]
 
 ### Installation
 
@@ -166,7 +166,7 @@ If you use TFLlib in your research, please cite our repo:
 ```bibtex
 @misc{chen2025tfllib,
   title={TFLlib: Trustworthy Federated Learning Library and Benchmark},
-  author={Jiahao Chen, Zhiming Zhao and Zhang, Jianqing},
+  author={Jiahao Chen, Zhiming Zhao and Jianqing Zhang},
   year={2025},
   url={https://github.com/xaddwell/TFLlib}
 }
@@ -177,7 +177,4 @@ If you use TFLlib in your research, please cite our repo:
 This project is licensed under the Apache License - see the [LICENSE](./LICENSE) file for details.
 
 ## Acknowledgments
-
-This work is supported by [PFLlib](https://github.com/TsingZ0/PFLlib.git)
-
 We thank all the researchers who contribute to the development of TFLlib. Especially, we thank the benchmark [PFLlib](https://github.com/TsingZ0/PFLlib.git), provided by [Jianqing Zhang](https://github.com/TsingZ0).
