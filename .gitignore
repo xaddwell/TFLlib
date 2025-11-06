@@ -7,7 +7,13 @@ models/
 save/
 scripts/
 log_file
-__pycache__
 *.log
 push2github.sh
 opensource.md
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+dist/
+build/
+*.egg-info/
