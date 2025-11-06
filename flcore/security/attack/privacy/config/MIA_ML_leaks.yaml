@@ -1,0 +1,12 @@
+# Choose the victim client 
+cid: 0
+
+atk_round: -1
+atk_model: 'nn' #cnn nn softmax shadow
+type: 'shadow'
+
+train:
+  epochs: 50
+  batch_size: 16
+  shadow_epochs: 80
+  lr: 1e-3 #1e-4

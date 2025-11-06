@@ -1,0 +1,19 @@
+# Choose one round to carry out attack
+atk_round: 1
+# Set the target number of pic to reconstruct 
+num2recovery: 64
+# Choose the victim client 
+cid: 0
+# this determines the value of the conv kernel
+conv_scale: 500
+# indice of data to start at
+indice: 0   
+attack_mode: 'Active'
+
+num_client_scaling: True
+
+model_modification:
+  linfunc: 'avg'
+  position: 
+
+modality: 'vision'

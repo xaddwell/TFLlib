@@ -1,0 +1,6 @@
+cid: 0
+atk_round: -1
+mode: 'output' # grad output combine
+num_layers: 100
+epochs: 100
+batch_size: 64

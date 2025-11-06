@@ -1,0 +1,11 @@
+# Choose the victim client 
+cid: 0
+atk_round: -1
+
+train:
+  epochs: 60
+  batch_size: 32
+
+metrics:
+  acc: 'per_class'
+  precision_recall: 'per_class'

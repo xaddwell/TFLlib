@@ -1,0 +1,11 @@
+*__pycache__*
+*.json
+*.gz
+*.npz
+*.png
+*.jpg
+models/
+save/
+scripts/
+log_file
+__pycache__

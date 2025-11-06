@@ -1,0 +1,11 @@
+
+
+poison_rate: 0.5
+poison_target_label: 0
+scale_weights_poison: 1
+poison_epochs: [[0,3000]]
+
+
+alpha1: 0.3
+alpha2: 0.3
+beta: 0.5

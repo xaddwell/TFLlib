@@ -1,0 +1,5 @@
+
+
+beta: 0.1
+poison_epochs: [[0,3000]]
+weight_scale: 1

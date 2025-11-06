@@ -1,0 +1,15 @@
+
+
+poison_rate: 0.2
+poison_target_label: 0
+scale_weights_poison: 1
+poison_epochs: [[0,3000]]
+
+
+alpha: 0.01
+search_trigger_epochs: 2
+
+x_top: 2
+y_top: 2
+trigger_size: 5
+img_poison_patterns: [[1., 0., 1.],[0., 1., 0.],[0., 0., 0.],[0., 1., 0.],[1., 0., 1.]]

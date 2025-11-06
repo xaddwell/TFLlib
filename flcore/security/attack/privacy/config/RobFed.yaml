@@ -1,0 +1,22 @@
+# Choose one round to carry out attack
+atk_round: 1
+# Set the target number of pic to reconstruct 
+num2recovery: 64
+# Choose the victim client 
+cid: 0
+
+mode: 32
+num_bins: 64
+connection: 'linear' #'addition' 
+model_modification_type: 'SparseImprintBlock' # ImprintBlock or OneShotBlock
+attack_mode: 'Active'
+
+model_modification:
+  linfunc: 'fourier'
+  position: 
+  handle_preceding_layers:
+
+modality: 'vision'
+breach_padding: True # Pad with zeros if not enough data is recovered
+breach_reduction: bias
+sort_by_bias: True

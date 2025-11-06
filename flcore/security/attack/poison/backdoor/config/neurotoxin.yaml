@@ -1,0 +1,22 @@
+
+
+poison_rate: 1
+poison_target_label: 0
+scale_weights_poison: 1
+poison_epochs: [[0,3000]]
+
+alpha1: 0.5
+gradmask_ratio: 0.95
+
+x_top: 2
+y_top: 2
+dynamic_position: False
+img_poison_patterns: [[1., 0., 1.],[0., 1., 0.],[0., 0., 0.],[0., 1., 0.],[1., 0., 1.]]
+
+tabular_poison_patterns: [1,2]
+text_poison_patterns: "cf"
+
+
+
+
+

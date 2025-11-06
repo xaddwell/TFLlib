@@ -1,0 +1,5 @@
+
+
+beta: 0.1
+poison_epochs: [[1,3000]]
+dev_type: "unit_vec"

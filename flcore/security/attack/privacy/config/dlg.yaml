@@ -1,0 +1,24 @@
+---
+atk_type: "opt"
+atk_name: "dlg"
+# Set the target number of pic to reconstruct 
+num2recovery: 64
+# Choose one round to carry out attack
+atk_round: 1
+# Number of epochs to reconstruct a sample
+num_trials: 500
+optim: LBFGS
+cost_fn: Euclidean
+signed: False
+regularization: 
+# Choose the victim client 
+cid: 0
+# Way to infer label
+label_inf: iDLG
+# Choos the target simple
+tid: 
+# Choice of image initialization
+init_img: rand
+scheduler:
+# Set the frequency of print loss and save image
+print_interval: 100

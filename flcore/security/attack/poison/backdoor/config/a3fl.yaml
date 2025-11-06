@@ -1,0 +1,19 @@
+
+
+poison_rate: 0.2
+poison_target_label: 0
+scale_weights_poison: 1
+poison_epochs: [[0,3000]]
+
+
+alpha: 0.01
+adv_model_num: 1
+noise_loss_lambda: 0.01
+adv_epochs: 5
+search_trigger_epochs: 2
+adv_interval: 1
+
+
+x_top: 2
+y_top: 2
+trigger_size: 5

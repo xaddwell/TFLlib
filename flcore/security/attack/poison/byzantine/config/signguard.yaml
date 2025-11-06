@@ -1,0 +1,4 @@
+
+
+beta: 0.1
+poison_epochs: [[1,3000]]

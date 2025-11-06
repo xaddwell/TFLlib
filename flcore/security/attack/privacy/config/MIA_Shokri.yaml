@@ -1,0 +1,20 @@
+---
+cid: 0
+atk_round: -1
+
+train:
+  number_shadow_model: 5
+  train_datasize: 2500
+  test_datasize: 1000
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.01
+
+classifier:
+  reg_lambd: 1
+  n_estimators: 100
+
+metrics:
+  acc: 'per_class'
+  precision_recall: 'per_class'
+  auc:

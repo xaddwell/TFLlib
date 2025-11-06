@@ -1,0 +1,6 @@
+
+
+beta: 0.1
+poison_epochs: [[1,3000]]
+target_label: -1
+victim_label: 1

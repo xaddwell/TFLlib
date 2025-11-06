@@ -1,0 +1,32 @@
+---
+atk_type: opt
+atk_name: inv_grads
+# Set the target number of pic to reconstruct 
+num2recovery: 64
+# Choose one round to carry out attack
+atk_round: 1
+# Number of epochs to reconstruct a sample
+num_trials: 4000
+optim: adam
+lr: 0.1
+cost_fn: CosSim
+#signed: True
+regularization:
+  TV: 5e-4
+  L2: 1e-6
+  BN: 0.1
+  
+#smaller for CIFAR 10 normal: 0.2
+scheduler:
+  MultiStepLR
+# Choose the victim client 
+cid: 0
+tid:
+# Way to infer label
+label_inf: iDLG
+# Dishonest server permuting weights in classification layer
+label_flip: False
+# Choice of image initialization
+init_img: randn
+# Set the frequency of print loss and save image
+print_interval: 1000
