@@ -1,8 +1,12 @@
 [project]
-name = "rfllib"
+name = "TFLlib"
 version = "0.1.0"
 description = "Trustworthy Federated Learning Library and Benchmark"
 readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "xaddwell", email = "xaddwell@zju.edu.cn"}
+]
 requires-python = ">=3.12"
 dependencies = [
     "calmsize==0.1.3",
@@ -35,3 +39,8 @@ include = ["TFLlib"]
 [[tool.uv.index]]
 url = "https://mirrors.aliyun.com/pypi/simple/"
 default = true
+
+
+[project.urls]
+Homepage = "https://github.com/xaddwell/TFLlib"
+Repository = "https://github.com/xaddwell/TFLlib"

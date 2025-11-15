@@ -3,7 +3,6 @@
 *.gz
 *.npz
 *.jpg
-models/
 save/
 scripts/
 log_file
