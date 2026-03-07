@@ -123,42 +123,23 @@ def simulate_split(args, dataset, num_classes):
         # split dataset
         ## define temporary container
         assigned_indices = []
+        min_size = 0
+        while min_size < MIN_SAMPLES:
+            assigned_indices = [[] for _ in range(args.num_clients)]
 
-        ## NOTE: it is possible that not all samples be consumed, as it is intended for satisfying each clients having at least `MIN_SAMPLES` samples per class
-        for k in TqdmToLogger(range(args.num_clients), logger=logger, desc='[SIMULATE] ...assigning to clients... '):
-            ### for current client of which index is `k`
-            curr_indices = []
-            satisfied_counts = 0
+            for k in range(num_classes):
+                idx_k = class_indices[k].copy()
+                np.random.shuffle(idx_k)
 
-            ### ...until the number of samples close to ideal counts is filled
-            while satisfied_counts < ideal_counts:
-                ### define Dirichlet distribution of which prior distribution is an uniform distribution
-                diri_prior = np.random.uniform(size=num_classes)
-                
-                ### sample a parameter corresponded to that of categorical distribution
-                cat_param = np.random.dirichlet(alpha=args.cncntrtn * diri_prior)
+                prop = np.random.dirichlet(np.repeat(args.cncntrtn, args.num_clients))
+                prop = prop / prop.sum()
+                split_points = (np.cumsum(prop) * len(idx_k)).astype(int)[:-1]
 
-                ### try to sample by amount of `ideal_counts``
-                sampled = np.random.choice(num_classes, ideal_counts, p=cat_param)
+                split_indices = np.split(idx_k, split_points)
+                for j in range(args.num_clients):
+                    assigned_indices[j] += split_indices[j].tolist()
 
-                ### count per-class samples
-                unique, counts = np.unique(sampled, return_counts=True)
-                if len(unique) < args.mincls: 
-                    continue
-                
-                ### filter out sampled classes not having as much as `MIN_SAMPLES`
-                required_counts = counts * (counts > MIN_SAMPLES)
-
-                ### assign from population indices split by classes 
-                for idx, required_class in enumerate(unique):
-                    if required_counts[idx] == 0: continue
-                    sampled_indices = class_indices[required_class][:required_counts[idx]]
-                    curr_indices.append(sampled_indices)
-                    class_indices[required_class] = class_indices[required_class][:required_counts[idx]]
-                satisfied_counts += sum(required_counts)
-            
-            ### when enough samples are collected, go to next clients!
-            assigned_indices.append(np.concatenate(curr_indices))
+            min_size = min([len(idx_j) for idx_j in assigned_indices])
 
         # construct a hashmap
         split_map = {k: assigned_indices[k] for k in range(args.num_clients)}
