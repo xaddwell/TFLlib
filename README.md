@@ -178,6 +178,13 @@ If you find TFLlib useful in your research, please cite:
   year={2025},
   url={https://github.com/xaddwell/TFLlib}
 }
+
+@article{chen2025tfllib,
+  title={Unveiling the Security Risks of Federated Learning in the Wild: From Research to Practice},
+  author={Jiahao Chen, Zhiming Zhao, Yuwen Pu, Chunyi Zhou, Zhou Feng, Songze Li, Shouling Ji},
+  year={2026},
+  journal={arXiv preprint arXiv:1812.01097},
+}
 ```
 
 ## License
