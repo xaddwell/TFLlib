@@ -2,7 +2,7 @@
 ![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 ---
 
-🎯**If you find our repository useful, please cite the corresponding paper (Coming Soon) and Repository:**
+🎯**If you find our repository useful, please cite the [corresponding paper]() and Repository:**
 
 TFLlib is a comprehensive library for trustworthy federated learning research based on [PFLlib](https://github.com/TsingZ0/PFLlib.git). It provides a unified framework to evaluate federated learning algorithms under various trustworthiness threats including Backdoor attacks, Byzantine attacks, Membership Inference Attacks (MIA), Label Inference Attacks (LIA) and Gradient Inversion Attacks (GIA).
 
@@ -179,7 +179,7 @@ If you find TFLlib useful in your research, please cite:
   url={https://github.com/xaddwell/TFLlib}
 }
 
-@article{chen2025tfllib,
+@article{chen2026unveiling,
   title={Unveiling the Security Risks of Federated Learning in the Wild: From Research to Practice},
   author={Jiahao Chen, Zhiming Zhao, Yuwen Pu, Chunyi Zhou, Zhou Feng, Songze Li, Shouling Ji},
   year={2026},
